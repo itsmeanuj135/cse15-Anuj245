@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object in js = colllrction pairs of keys ,properties and its value
+        //object using literal way
+
+let student={
+    name:"anuj",
+    age:19,
+    isMarried:false,
+    address:{
+        street  :3,
+        area:"Crossing",
+        pin:201016,
+    },
+    course :"Btech",
+    branch :"cse",
+    getInfo:function(){
+        return "my Education is" +student.course;
+        },
+    
+
+    };
+    
+    
+    
+console.log(student);
+console.log(typeof(student));
+
+//iterate,loop for object
+
+for(let x in student){
+    console.log(student[x]);
+
+}
+
+
+    </script>
+    
+</body>
+</html>

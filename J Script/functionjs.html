@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //function - block of code to perform particular task
+        //type , with parameter, without ,default parametetr,,
+       
+        //without param.
+       function demo(){
+        console.log("Hello js");
+       }
+       demo();
+      //with para
+      function demo1(text){
+        console.log("Hello" + text);
+
+      }
+      demo1("React");
+      //default parameter
+      function add(a,b=22){
+        var num1 =a;
+        var num2=b;
+        var res= num1+num2;
+        console.log("addition"   +res);
+
+    
+      }
+     add(34)
+//synchronous  
+function calc(){
+    function add(a,b){
+        console.log("Addition is" +(a+b));
+    }
+     function sub(x,y){
+        console.log("subtraction is" +(x-y));
+     }
+     function mul(p,q){
+        console.log("Multiply  is" +(p*q));
+     }
+     mul(9,6);
+     sub(5,7);
+     add(2,4);
+}
+calc();
+
+//anonymous function - doest have a name or identifier 
+let msg= function(){
+    console.log("Hello abes")
+
+}
+msg();
+
+
+//call back func--
+function cal(a,b,callback){
+    var num1 =12;
+    console.log("First no.is"  +num1);
+    var num2=20;
+    console.log("Second no.is"  +num2);
+    var res=num1+ num2;
+    callback(res);
+}
+function display(res){
+     console.log("Result is"  +res);
+}
+ cal(3,4,display);
+
+//callback using set timeout api
+ function greeting(){
+    document.writeln("HEllo student ");
+
+ }
+ function loading(){
+     document.writeln("Data loading......");
+
+ }
+
+
+
+
+//-promises in js
+
+
+
+    
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
